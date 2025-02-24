@@ -1,0 +1,143 @@
+/* ContactMe.css */
+.contact-section {
+  position: relative;
+  padding: 4rem 2rem;
+  /* background: linear-gradient(45deg, #0a0a0a, #00111a); */
+  min-height: 70vh;
+  /* overflow: hidden; */
+}
+
+/* .cyber-bg-contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(0, 255, 255, 0.1) 50%, transparent 52%),
+    repeating-linear-gradient(-45deg, #00111a 0 2px, #0a0a0a 2px 4px);
+  z-index: 0;
+} */
+
+.cyber-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00f3ff;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.flicker {
+  animation: flicker 2s infinite alternate;
+}
+
+.cyber-form {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.input-group {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.cyber-input {
+  width: 100%;
+  padding: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00f3ff;
+  border-radius: 5px;
+  color: #00f3ff;
+  font-family: 'Orbitron', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.cyber-input:focus {
+  outline: none;
+  box-shadow: 0 0 15px #00f3ff;
+}
+
+.input-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  animation: input-glow 2s infinite;
+  pointer-events: none;
+}
+
+.cyber-button {
+  position: relative;
+  padding: 1rem 3rem;
+  background: transparent;
+  border: 2px solid #00f3ff;
+  color: #00f3ff;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 2rem auto 0;
+  display: block;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cyber-button:hover:not(:disabled) {
+  background: #00f3ff;
+  color: #000;
+  box-shadow: 0 0 25px #00f3ff;
+}
+
+.success-message {
+  color: #39ff14;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #39ff14;
+}
+
+.error-message {
+  color: #ff073a;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow: 0 0 10px #ff073a;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 5px #00f3ff,
+      0 0 10px #00f3ff,
+      0 0 20px #00f3ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+@keyframes input-glow {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.5; }
+}
+
+@media (max-width: 768px) {
+  .cyber-heading {
+    font-size: 2rem;
+  }
+  
+  .cyber-input {
+    padding: 1rem;
+  }
+}

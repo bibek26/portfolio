@@ -1,0 +1,159 @@
+/* Experience.css */
+.experience-section {
+  position: relative;
+  padding: 4rem 2rem;
+  /* background: linear-gradient(45deg, #0a0a0a, #00111a);
+  overflow: hidden; */
+}
+
+/* .cyber-bg-experience {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(0, 255, 255, 0.1) 50%, transparent 52%),
+    repeating-linear-gradient(-45deg, #00111a 0 2px, #0a0a0a 2px 4px);
+  z-index: 0;
+} */
+
+.experience-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #00f3ff;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.flicker-experience {
+  animation: flicker-skills 2s infinite alternate;
+}
+
+@keyframes flicker-skills {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 5px #00f3ff,
+      0 0 10px #00f3ff,
+      0 0 20px #00f3ff,
+      0 0 40px #00f3ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.cyber-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.cyber-timeline::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(to bottom, #00f3ff, transparent);
+}
+
+.timeline-entry {
+  position: relative;
+  margin: 3rem 0;
+}
+
+.timeline-node {
+  position: absolute;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.node-glow {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: node-pulse 2s infinite;
+  border: 2px solid currentColor;
+}
+
+@keyframes node-pulse {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.8); opacity: 0.7; }
+}
+
+.timeline-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid;
+}
+
+.role-title {
+  color: #00f3ff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.company-name {
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+  color: #7df9ff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.timeline-line {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 2px;
+  width: 50px;
+  background: #00f3ff;
+  animation: line-glow 2s infinite;
+}
+
+@keyframes line-glow {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cyber-timeline {
+    padding-left: 20px;
+  }
+  
+  .timeline-node {
+    left: -35px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .experience-heading {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+}

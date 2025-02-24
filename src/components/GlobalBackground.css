@@ -1,0 +1,68 @@
+/* components/GlobalBackground.css */
+.global-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: 
+    linear-gradient(45deg, #0a0a0a, #00111a),
+    linear-gradient(45deg, transparent 48%, rgba(0, 255, 255, 0.1) 50%, transparent 52%),
+    repeating-linear-gradient(-45deg, #00111a 0 2px, #0a0a0a 2px 4px);
+  animation: grid-scroll 100s linear infinite;
+}
+
+.section-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.9) 30%,
+    transparent 100%
+  ); */
+  z-index: -1;
+}
+
+ .cyber-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, transparent 48%, rgba(0, 255, 255, 0.1) 50%, transparent 52%),
+    repeating-linear-gradient(-45deg, 
+      #00111a 0px, 
+      #00111a 2px, 
+      #0a0a0a 2px, 
+      #0a0a0a 4px
+    );
+  animation: grid-scroll 100s linear infinite;
+}
+
+@keyframes grid-scroll {
+  from { background-position: 0 0; }
+  to { background-position: 2000px 2000px; }
+} 
+
+/* .scanline-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 255, 0.05) 0%,
+    rgba(0, 255, 255, 0.05) 1%,
+    transparent 1%,
+    transparent 2%
+  );
+  animation: scan 15s linear infinite;
+}
+
+@keyframes scan {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(100%); }
+} */
