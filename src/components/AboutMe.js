@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutMe.css';
-import meImage from '../assets/me.jpg';
+import meImage from '../assets/mee.jpg';
 import BatmanEmblem from '../assets/batman-emblem.png';
 
 const AboutMe = () => {
