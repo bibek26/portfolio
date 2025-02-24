@@ -72,7 +72,7 @@
   perspective: 1000px;
   height: 300px;
   margin-bottom: 2rem;
-  margin: 30px; /* Add margin around cards */
+  margin: 30px;
   transform: translateZ(0);
 }
 
@@ -107,6 +107,8 @@
 }
 
 .card-back {
+  text-align: justify;
+  text-justify: inter-word;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;

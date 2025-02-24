@@ -12,7 +12,7 @@
 
 .about-section {
   position: relative;
-  min-height: 60vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -127,6 +127,7 @@
   z-index: 2;
   perspective: 1000px;
   margin: 1rem auto 0;
+  padding-bottom: 0;
 }
 
 .bat-symbol {

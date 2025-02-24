@@ -8,35 +8,35 @@ const Portfolio = () => {
   const projects = [
     { 
       title: "Bird's Species Recognition", 
-      description: "Android application leveraging convolutional neural networks (CNN) to identify 150+ bird species with 92% accuracy. Implemented a Flask API middleware to handle TensorFlow model inference, optimizing image processing for mobile devices through quantization techniques.",
+      description: "Android application leveraging convolutional neural networks (CNN) to identify 50+ bird species with 82% accuracy. Implemented a Flask API middleware to handle TensorFlow model inference, optimizing image processing for mobile devices through quantization techniques.",
       tech: ['CNN', 'Java', 'Android', 'Flask', 'TensorFlow'],
-      link: '#',
+      link: 'https://github.com/bibek26/Chirpmate',
       category: 'ml',
-      image: 'bird-project.jpg'
+      image: 'bird.png'
     },
     { 
       title: "Portfolio Website", 
       description: "Immersive cyberpunk-themed portfolio featuring 3D visualizations and interactive animations. Implemented dynamic lighting effects using Three.js and optimized WebGL rendering for 60fps performance across devices. Integrated Framer Motion for smooth transitions and scroll-based parallax effects.",
       tech: ['React', 'Framer Motion', 'Three.js', 'CSS3', 'WebGL'],
-      link: '#',
+      link: 'https://github.com/bibek26/portfolio',
       category: 'web',
-      image: 'portfolio-project.jpg'
+      image: 'batman.png'
     },
     { 
       title: "Sentiment Analysis Engine", 
       description: "Natural Language Processing system analyzing text sentiment with 89% F1-score. Utilized Scikit-learn's SVM classifiers with NLTK for text preprocessing. Deployed as REST API using Flask, processing 500+ requests/minute with Celery task queue optimization.",
       tech: ['Python', 'Scikit-learn', 'Flask', 'NLTK', 'Pandas'],
-      link: '#',
+      link: 'https://github.com/bibek26/movie-sentiment-analyzer',
       category: 'ml',
-      image: 'sentiment-analysis.jpg'
+      image: 'movie.png'
     },
     { 
       title: "Laravel E-Commerce Platform", 
-      description: "Full-stack e-commerce solution supporting 10k+ products. Implemented Stripe/PayPal integration with PCI-DSS compliance. Features include real-time inventory management, JWT authentication, and automated order fulfillment using Laravel Queues.",
+      description: "Full-stack e-commerce solution supporting various products. Features include real-time inventory management, JWT authentication, and automated order fulfillment using Laravel Queues.",
       tech: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'REST API'],
       link: '#',
       category: 'web',
-      image: 'laravel-store.jpg'
+      image: 'ecommerce.png'
     },
     { 
       title: "Smart Todo Application", 
@@ -44,7 +44,7 @@ const Portfolio = () => {
       tech: ['Java', 'Android Studio', 'MySQL', 'Firebase', 'XML'],
       link: '#',
       category: 'android',
-      image: 'me.png'
+      image: 'todo.png'
     }
     // Add more projects
   ];

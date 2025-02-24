@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './AboutMe.css';
-import meImage from '../assets/me.png';
+import meImage from '../assets/me.jpg';
 import BatmanEmblem from '../assets/batman-emblem.png';
 
 const AboutMe = () => {
@@ -63,19 +63,6 @@ const AboutMe = () => {
           </div>
         </motion.div>
       </div>
-
-      {/* <motion.div 
-        className="emblem-container"
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <img 
-          src={BatmanEmblem} 
-          alt="Batman Emblem" 
-          className="bat-symbol"
-        />
-        <div className="emblem-glow"></div>
-      </motion.div> */}
 
   <motion.div 
     className="emblem-container"

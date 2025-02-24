@@ -15,19 +15,19 @@ const Footer = () => {
         </div>
 
         <div className="cyber-social">
-          <a href="#" className="social-link">
+          <a href="https://www.linkedin.com/in/bibek-baharadar-4b43271a0/" className="social-link">
             <FaLinkedin className="social-icon" />
             <span className="social-text">LINKED_IN</span>
           </a>
-          <a href="#" className="social-link">
+          <a href="https://github.com/bibek26" className="social-link">
             <FaGithub className="social-icon" />
             <span className="social-text">GIT_PROTOCOL</span>
           </a>
-          <a href="#" className="social-link">
+          <a href="https://x.com/BibekBaharadar" className="social-link">
             <FaTwitter className="social-icon" />
             <span className="social-text">TWITTER</span>
           </a>
-          <a href="#" className="social-link">
+          <a href="https://www.instagram.com/bbekb_/" className="social-link">
             <FaInstagram className="social-icon" />
             <span className="social-text">INSTAGRAM</span>
           </a>
