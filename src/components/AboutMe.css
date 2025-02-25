@@ -179,4 +179,8 @@
     width: 100px;
     margin-top: 1.5rem;
   }
+
+  .about-description{
+    font-size: 0.9rem;
+  }
 } 
