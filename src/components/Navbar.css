@@ -136,7 +136,7 @@
 
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 888px) {
   .navbar {
     padding: 1rem;
     justify-content: center;
