@@ -70,7 +70,7 @@
 
 .project-card {
   perspective: 1000px;
-  height: 300px;
+  height: 320px;
   margin-bottom: 2rem;
   margin: 30px;
   transform: translateZ(0);
@@ -107,14 +107,16 @@
 }
 
 .card-back {
-  text-align: justify;
-  text-justify: inter-word;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.project-description{
+  text-align: justify;
+  text-justify: inter-word;
+}
 .project-image {
   height: 200px;
   background-size: cover;
@@ -134,13 +136,13 @@
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1.5px;
 }
 
 .tech-item {
   background: rgba(0, 243, 255, 0.1);
-  padding: 0.3rem 0.8rem;
-  border-radius: 15px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 14px;
   color: #00f3ff;
   font-size: 0.9rem;
 }
@@ -149,10 +151,12 @@
   position: relative;
   color: #00f3ff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.8rem;
   border: 2px solid #00f3ff;
   border-radius: 30px;
   overflow: hidden;
+  text-align: center;
+
 }
 
 .link-glow {
@@ -194,5 +198,86 @@
 
   .filter-bar {
     flex-wrap: wrap;
+  }
+
+  .project-card {
+    height: auto; /* Remove fixed height */
+    min-height: 400px; /* Set minimum height */
+  }
+
+  .card-inner {
+    height: 400px; /* Fixed height for mobile */
+  }
+
+  .card-back {
+    padding: 0.3rem;
+    overflow: auto; /* Allow scrolling if content overflows */
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .tech-item {
+    font-size: 0.8rem;
+    padding: 1px;
+    margin: 1px;
+  }
+
+  .project-link {
+    font-size: 1rem;
+    /* padding: 0.5rem 0.6rem; */
+    padding: 0.1rem 0.6rem 0.1rem 0.6rem;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  .link-text {
+    display: inline-block; /* Ensures the span can be centered */
+    text-align: center; /* Centers the text within the span */
+  }
+
+  .project-image {
+    height: 180px; /* Reduce image height */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-inner {
+    height: 380px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .tech-stack {
+    gap: 0.5rem;
+  }
+
+  .card-back {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-inner {
+    height: 380px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  .tech-stack {
+    gap: 0.5rem;
+  }
+
+  .card-back {
+    padding: 1rem;
   }
 }

@@ -16,7 +16,7 @@ const Portfolio = () => {
     },
     { 
       title: "Portfolio Website", 
-      description: "Immersive cyberpunk-themed portfolio featuring 3D visualizations and interactive animations. Implemented dynamic lighting effects using Three.js and optimized WebGL rendering for 60fps performance across devices. Integrated Framer Motion for smooth transitions and scroll-based parallax effects.",
+      description: "Immersive cyberpunk-themed portfolio featuring 3D visualizations and interactive animations. Implemented dynamic lighting effects using Three.js and optimized WebGL rendering for 60fps performance. Integrated Framer Motion for smooth transitions.",
       tech: ['React', 'Framer Motion', 'Three.js', 'CSS3', 'WebGL'],
       link: 'https://github.com/bibek26/portfolio',
       category: 'web',
