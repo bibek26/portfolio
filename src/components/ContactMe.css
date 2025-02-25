@@ -134,10 +134,21 @@
 
 @media (max-width: 768px) {
   .cyber-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
   }
   
   .cyber-input {
     padding: 1rem;
+  }
+
+  .cyber-button {
+    padding: 0.5rem 1rem;  /* Smaller padding */
+    font-size: 0.8rem;     /* Smaller font size */
+    border-radius: 6px;    /* Optional, for tighter corners on small screens */
+  }
+
+  .contact-section {
+    margin-bottom: -2.5rem;
   }
 }

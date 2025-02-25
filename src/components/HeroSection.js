@@ -20,7 +20,9 @@ const HeroSection = () => {
     <div className="hero-section">
       <motion.div 
         className="background-image"
-        style={{ y }}
+        style={{ y,
+          backgroundImage: "url('/me.jpg')"
+         }}
         initial={{ scale: 1.2 }}
         animate={{ scale: 1 }}
         transition={{ duration: 2 }}

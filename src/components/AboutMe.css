@@ -170,7 +170,7 @@
   }
   
   .about-heading {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     display: flex;
     justify-content: center;
   }
@@ -182,5 +182,9 @@
 
   .about-description{
     font-size: 0.9rem;
+  }
+
+  .about-section {
+    margin-bottom: -3rem;
   }
 } 

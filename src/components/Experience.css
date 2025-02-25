@@ -148,12 +148,16 @@
   }
   
   .experience-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
   }
 
   .timeline-content {
     padding: 1.5rem;
+  }
+
+  .experience-section {
+    margin-bottom: -3rem;
   }
 }

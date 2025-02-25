@@ -143,13 +143,13 @@
   }
 
   .skills-heading {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: center;
   }
 
   .skill-card {
-    padding: 1rem;
+    padding: 0.8rem;
     left: -2rem;
     flex-direction: column;
     align-items: flex-start;
@@ -159,5 +159,9 @@
     margin-bottom: 1rem;
     margin-right: 0;
     font-size: 2rem;
+  }
+
+  .skills-section {
+    margin-bottom: -3rem;
   }
 }
